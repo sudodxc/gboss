@@ -10,6 +10,7 @@ var nexturl = regexp.MustCompile(`<a href="(/c101020100-p100103/?.*)" ka="page-[
 
 // const urlall = `<p>(.*?)<em class="vline"></em>(.*?)<em class="vline"></em>(.*?)</p>`
 func ParseJob(contents []byte) engine.ParseResult {
+	//hao
 
 	match := urlall.FindAllSubmatch(contents, -1)
 	request := engine.ParseResult{}
